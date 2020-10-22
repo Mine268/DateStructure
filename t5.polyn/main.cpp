@@ -48,16 +48,17 @@ public:
     }
 
     // 析构函数
-    // ~polyn()
-    // {
-    //     node *ind = this->head, *pnd = ind;
-    //     while (ind != nullptr)
-    //     {
-    //         ind = ind->next;
-    //         free(pnd);
-    //         pnd = ind;
-    //     }
-    // }
+    ~polyn()
+    {
+        node *ind = this->head, *pnd = ind;
+        while (ind != nullptr)
+        {
+            ind = ind->next;
+            free(pnd);
+            pnd = ind;
+        }
+        this->head->next = nullptr;
+    }
 
     // 追加节点到末尾
     void addNode(node *val)
