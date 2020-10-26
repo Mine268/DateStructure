@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+int buffer;
 
 class mystack
 {
@@ -60,12 +61,12 @@ void judge(int);
 int main(void)
 {
     int a, b;
-    scanf("%d%d", &a, &b);
+    buffer = scanf("%d%d", &a, &b);
     while (a != 0 && b != 0)
     {
         while (b-- > 0)
             judge(a);
-        scanf("%d%d", &a, &b);
+        buffer = scanf("%d%d", &a, &b);
         if (a != 0 && b != 0)
             putchar('\n');
     }
@@ -79,12 +80,12 @@ void judge(int n)
     stk.push(topline - 1);
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &cur);
+        buffer = scanf("%d", &cur);
         if (cur < stk.top())
         {
             cout << "No" << endl;
             while (i++ < n - 1)
-                scanf("%*d");
+                buffer = scanf("%*d");
             return;
         }
         else if (cur == stk.top())
@@ -100,7 +101,7 @@ void judge(int n)
             {
                 cout << "No" << endl;
                 while (i++ < n - 1)
-                    scanf("%*d");
+                    buffer = scanf("%*d");
                 return;
             }
             else
