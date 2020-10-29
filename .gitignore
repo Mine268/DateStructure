@@ -1,3 +1,6 @@
 *.exe
 *.json
-
+*.class
+*.name
+*.xml
+*.java
