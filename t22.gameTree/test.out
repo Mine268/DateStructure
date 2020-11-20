@@ -1,0 +1,26 @@
+a
+b
+x
+c
+d
+e
+g
+h
+f
+Who play first(0:computer;1:player)?
+player:
+computer:d
+Sorry,you lost.
+Continue(y/n)?
+Who play first(0:computer;1:player)?
+player:
+illegal move.
+player:
+computer:x
+Sorry,you lost.
+Continue(y/n)?
+Who play first(0:computer;1:player)?
+computer:c
+player:
+Congratulate,you win.
+Continue(y/n)?
