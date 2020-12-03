@@ -43,7 +43,7 @@ int main(void) {
     }
 
     for (int i = 0; i < n; i++)
-        printf("%c:%d\n", i + 'a', dis[i]);
+            printf("%c:%d\n", i + 'a', dis[i]);
 
     return 0;
 }
